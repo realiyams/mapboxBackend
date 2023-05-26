@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>API USAGE</title>
+</head>
+
+<body>
+  <div class="usage-example">
+    <h2>Cara penggunaan API endpoint:</h2>
+    <ul>
+      <li>Untuk mendapatkan data gedung UPI: <code>GET /api/buildings</code></li>
+      <li>Untuk mendapatkan data gambar gedung UPI: <code>GET /api/:buildingName/images</code></li>
+      <li>Untuk mendapatkan rute dan jarak tempuh antara dua gedung UPI: <code>GET /api/buildings/direction?start=TEMPAT_AWAL&destination=TEMPAT_AKHIR</code></li>
+    </ul>
+
+    <h2>Contoh penggunaan:</h2>
+    <ul>
+      <li><a href="/api/buildings">/api/buildings</a></li>
+      <li><a href="/api/REKTORAT BUMI SILIWANGI/images">/api/REKTORAT BUMI SILIWANGI/images</a></li>
+      <li><a href="/api/buildings/direction?start=REKTORAT BUMI SILIWANGI&destination=MUSEUM PENDIDIKAN">/api/buildings/direction?start=REKTORAT BUMI SILIWANGI&destination=MUSEUM PENDIDIKAN</a></li>
+    </ul>
+    
+    <h3>Semua response dalam bentuk JSON:</h3>
+    <code>
+      {
+        "_id": "CONTOH_ID",
+        "name": "NAMA_GEDUNG",
+        "description": "CONTOH_DESKRIPSI",
+        "coordinate": [
+        "LONGITUDE",
+        "LATITUDE"
+        ]
+      }
+    </code>
+    <br />
+    <br />
+  </div>
+</body>
+
+</html>
