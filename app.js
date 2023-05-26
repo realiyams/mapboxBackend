@@ -89,7 +89,9 @@ app.get('/api/:buildingName/images', (req, res) => {
     return {
       name: filename,
       size: stats.size,
-      url: `http://${req.hostname}:${process.env.PORT}/images/${buildingName}/${filename}`
+      url: `http://${req.hostname}:${process.env.PORT}/images/${buildingName.replace(/ /g, '%20')}/${filename}`
+      // in localhost
+      // `http://${req.hostname}:${process.env.PORT}/images/${buildingName.replace(/ /g, '%20')}/${filename}`
     }
   })
   res.json(images)
