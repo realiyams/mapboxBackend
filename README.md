@@ -1,6 +1,6 @@
 # Backend API menggunakan Express.js
 
-Ini adalah proyek backend sebagai API menggunakan Express.js dan mongoDB. API ini dibangun untuk digunakan dengan frontend aplikasi di repository frontend.
+Ini adalah proyek backend sebagai API menggunakan Express.js dan mongoDB. API ini dibangun untuk digunakan dengan frontend aplikasi di repository MapboxFrontend.
 
 ## Persyaratan
 
@@ -13,13 +13,13 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan proyek ini:
 1. Clone repositori ini atau unduh sebagai ZIP dan ekstrak:
 
 ```bash
-git clone <link-repositori>
+git clone https://github.com/realiyams/mapboxBackend.git
 ```
 
 2. Buka terminal atau command prompt dan arahkan ke direktori proyek:
 
 ```bash
-cd backend-express-api
+cd mapboxBackend
 ```
 
 3. Install dependensi:
